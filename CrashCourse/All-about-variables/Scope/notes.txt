@@ -1,0 +1,47 @@
+In JavaScript, scope refers to the accessibility or visibility of variables, functions, and objects in your code. 
+Scopes determine where a variable can be accessed or modified. JavaScript has several types of scopes:
+
+1. Global Scope
+Definition: Variables declared outside of any function or block are in the global scope. These variables are accessible everywhere in the code.
+Declared using: var, let, or const (outside any block or function).
+Example:
+javascript
+Copy code
+let globalVariable = "I am global";
+
+function showGlobal() {
+  console.log(globalVariable); // Accessible here
+}
+
+showGlobal();
+console.log(globalVariable); // Accessible here too
+Note: Variables in the global scope can pollute the namespace, so they should be minimized.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Function Scope
+Definition: Variables declared inside a function are accessible only within that function.
+Declared using: var, let, or const (inside a function).
+Example:
+javascript
+Copy code
+function greet() {
+  let message = "Hello, Function Scope!";
+  console.log(message); // Accessible here
+}
+
+greet();
+console.log(message); // Error: message is not defined
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Block Scope
+Definition: Variables declared inside a block {} using let or const are only accessible within that block.
+Declared using: let or const (inside a block like if, for, etc.).
+Example:
+javascript
+Copy code
+{
+  let blockVariable = "I exist only inside this block";
+  console.log(blockVariable); // Accessible here
+}
+
+console.log(blockVariable); // Error: blockVariable is not defined
+Note: var does not have block scope; it is hoisted to the function or global scope.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
