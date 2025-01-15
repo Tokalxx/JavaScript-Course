@@ -1,0 +1,20 @@
+Summary
+
+Object:	Base object for all other objects.
+Array:	Ordered collection of elements.
+String:	Handles text data.
+Number:	Handles numbers.
+BigInt:	Handles large integers.
+Boolean:	Handles true/false values.
+Date:	Works with dates and times.
+Math:	Provides mathematical constants and functions.
+RegExp:	Defines patterns for string matching and searching.
+JSON:	Parses and stringifies JSON data.
+Promise:	Manages asynchronous tasks.
+Map and Set:	Key-value pairs and unique value collections.
+Error:	Handles runtime errors.
+TypedArray:	Works with raw binary data.
+
+
+Built-in objects form the core of JavaScript and provide all the tools you need to handle data, time, and asynchronous programming. 
+Let me know if you’d like examples of more specialized built-in objects!
